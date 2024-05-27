@@ -57,7 +57,7 @@ class DevopsApplicationTests {
 
     @Test
     @DisplayName("Valida se há alguma tarefa com o status diferente de 'completed'")
-    void validateIfStatusesIsAllCompleted() {
+    void validateIfTaksIsFullyCompleted() {
         List<Task> tasks = extractTasksFromResponse(jsonResponse);
         boolean isAllCompleted = tasks.stream().allMatch(task -> Status.completed == task.getStatus());
 
@@ -66,7 +66,7 @@ class DevopsApplicationTests {
 
     @Test
     @DisplayName("Interpreta e valida o valor “due_on”")
-    void validateIfDueOnValue() {
+    void validateIfDueOnIsValid() {
         List<Task> tasks = extractTasksFromResponse(jsonResponse);
         boolean isAllDueOnValid = tasks.stream().allMatch(task -> {
             try {
