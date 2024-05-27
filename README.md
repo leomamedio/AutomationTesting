@@ -2,8 +2,8 @@
 Projeto utilizado para realizar testes automatizados à API RESTFul: https://gorest.co.in/public/v2/todos
 
 # Visão geral
-O projeto Java utilizando JUnit 5 e RestAssured para executar testes automatizados à API RESTFul: https://gorest.co.in/public/v2/todos
-O projeto é uma aplicação back-end com o objetivo de demonstrar a Automação de testes utilizando para uma API Restful
+O projeto é uma aplicação back-end com o objetivo de executar testes automatizados à API RESTFul: https://gorest.co.in/public/v2/todos
+
 ## Tecnologias
 
 - [Spring Boot](https://projects.spring.io/spring-boot) é uma ferramenta que simplifica a configuração e execução de aplicações Java stand-alone,  com conceitos de dependências “starters”, auto configuração e servlet container embutidos é proporcionado uma grande produtividade desde o start-up da aplicação até sua ida a produção.
