@@ -24,7 +24,7 @@ Maven 3.9.6
 ```
 
 
-## Executing Tests
+## Execute os tests
 ### A classe utilizada para executar os testes é: 
 ```
 DevopsApplicationTests.java
