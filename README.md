@@ -1,5 +1,5 @@
 # AutomationTesting
-Projeto utilizado para realizar testes automatizados à API RESTFul: https://gorest.co.in/public/v2/todos
+Projeto utilizado para realizar testes automatizados à uma API RESTFul.
 
 # Visão geral
 O projeto é uma aplicação back-end com o objetivo de executar testes automatizados à API RESTFul: https://gorest.co.in/public/v2/todos
