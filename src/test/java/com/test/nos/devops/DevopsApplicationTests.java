@@ -28,7 +28,6 @@ class DevopsApplicationTests {
     private static final String SCHEMA_JSON = "schema.json";
     private static final DateTimeFormatter FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.SSSXXX");
 
-    private ObjectMapper objectMapper = new ObjectMapper();
     private static Response response;
     private static String jsonResponse;
 
@@ -84,7 +83,7 @@ class DevopsApplicationTests {
     private List<Task> extractTasksFromResponse(String jsonResponse) {
         List<Task> tasks = new ArrayList<>();
         try {
-            tasks = objectMapper.readValue(jsonResponse, new TypeReference<List<Task>>() {});
+            tasks = new ObjectMapper().readValue(jsonResponse, new TypeReference<List<Task>>() {});
         } catch (IOException e) {
             e.printStackTrace();
         }
