@@ -23,8 +23,12 @@ Java 17
 Maven 3.9.6 
 ```
 
+## Clone o repositório:
+```
+git clone https://github.com/leomamedio/AutomationTesting.git
+```
 
-## Execute os tests
+## Execute os testes
 ### A classe utilizada para executar os testes é: 
 ```
 DevopsApplicationTests.java
