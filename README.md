@@ -30,7 +30,7 @@ Maven 3.9.6
 DevopsApplicationTests.java
 ```
 
-Para executar os tests, execute o seguinte comando:
+Para executar os testes, execute o seguinte comando:
 ```
 mvn clean test
 ```
