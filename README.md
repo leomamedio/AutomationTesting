@@ -29,7 +29,7 @@ git clone https://github.com/leomamedio/AutomationTesting.git
 ```
 
 ## Execute os testes
-### A classe utilizada para executar os testes é: 
+### Classe utilizada para executar os testes: 
 ```
 DevopsApplicationTests.java
 ```
