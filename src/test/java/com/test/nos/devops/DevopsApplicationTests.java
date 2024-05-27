@@ -33,7 +33,7 @@ class DevopsApplicationTests {
     private static String jsonResponse;
 
     @BeforeAll
-    public static void start() {
+    static void start() {
         response = RestAssured
                 .given()
                 .contentType(ContentType.JSON)
@@ -48,7 +48,7 @@ class DevopsApplicationTests {
 
     @Test
     @DisplayName("Valida o schema")
-    public void validateSchema() {
+    void validateSchema() {
         response
                 .then()
                 .assertThat()
@@ -58,7 +58,7 @@ class DevopsApplicationTests {
 
     @Test
     @DisplayName("Valida se há alguma tarefa com o status diferente de 'completed'")
-    public void validateIfStatusesIsAllCompleted() {
+    void validateIfStatusesIsAllCompleted() {
         List<Task> tasks = extractTasksFromResponse(jsonResponse);
         boolean isAllCompleted = tasks.stream().allMatch(task -> Status.completed == task.getStatus());
 
@@ -67,7 +67,7 @@ class DevopsApplicationTests {
 
     @Test
     @DisplayName("Interpreta e valida o valor “due_on”")
-    public void validateIfDueOnValue() {
+    void validateIfDueOnValue() {
         List<Task> tasks = extractTasksFromResponse(jsonResponse);
         boolean isAllDueOnValid = tasks.stream().allMatch(task -> {
             try {
